@@ -1,0 +1,134 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.baymax.demoapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.9.0] C:\Users\hello\.gradle\caches\transforms-3\5633b3ef8373eaef0da459a61de1fc9e\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+14        android:name="com.baymax.demoapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.9.0] C:\Users\hello\.gradle\caches\transforms-3\5633b3ef8373eaef0da459a61de1fc9e\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.9.0] C:\Users\hello\.gradle\caches\transforms-3\5633b3ef8373eaef0da459a61de1fc9e\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.baymax.demoapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.9.0] C:\Users\hello\.gradle\caches\transforms-3\5633b3ef8373eaef0da459a61de1fc9e\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] C:\Users\hello\.gradle\caches\transforms-3\5633b3ef8373eaef0da459a61de1fc9e\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:6:5-23:19
+20        android:name="com.baymax.demoapp.App"
+20-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:7:9-28
+21        android:allowBackup="true"
+21-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:8:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.9.0] C:\Users\hello\.gradle\caches\transforms-3\5633b3ef8373eaef0da459a61de1fc9e\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.DemoApp" >
+29-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:13:9-45
+30        <activity
+30-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:14:9-22:20
+31            android:name="com.baymax.demoapp.ui.activity.main_activity.ui.MainActivity"
+31-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:15:13-70
+32            android:exported="true" >
+32-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:16:13-36
+33            <intent-filter>
+33-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:17:13-21:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:18:17-69
+34-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:18:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:20:17-77
+36-->C:\Users\hello\StudioProjects\Navi\app\src\main\AndroidManifest.xml:20:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hello\.gradle\caches\transforms-3\3792df7aa0cc4d044a72898b846d5861\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+40            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+40-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hello\.gradle\caches\transforms-3\3792df7aa0cc4d044a72898b846d5861\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+41            android:exported="false"
+41-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hello\.gradle\caches\transforms-3\3792df7aa0cc4d044a72898b846d5861\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+42            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+42-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\hello\.gradle\caches\transforms-3\3792df7aa0cc4d044a72898b846d5861\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+43
+44        <meta-data
+44-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\hello\.gradle\caches\transforms-3\8414ea5e0be498e8d7f33dafda2187b0\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+45            android:name="com.google.android.gms.version"
+45-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\hello\.gradle\caches\transforms-3\8414ea5e0be498e8d7f33dafda2187b0\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+46            android:value="@integer/google_play_services_version" />
+46-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\hello\.gradle\caches\transforms-3\8414ea5e0be498e8d7f33dafda2187b0\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+47
+48        <uses-library
+48-->[androidx.window:window:1.0.0] C:\Users\hello\.gradle\caches\transforms-3\588e2749adfb91f970d070b479212ab6\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+49            android:name="androidx.window.extensions"
+49-->[androidx.window:window:1.0.0] C:\Users\hello\.gradle\caches\transforms-3\588e2749adfb91f970d070b479212ab6\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+50            android:required="false" />
+50-->[androidx.window:window:1.0.0] C:\Users\hello\.gradle\caches\transforms-3\588e2749adfb91f970d070b479212ab6\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+51        <uses-library
+51-->[androidx.window:window:1.0.0] C:\Users\hello\.gradle\caches\transforms-3\588e2749adfb91f970d070b479212ab6\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+52            android:name="androidx.window.sidecar"
+52-->[androidx.window:window:1.0.0] C:\Users\hello\.gradle\caches\transforms-3\588e2749adfb91f970d070b479212ab6\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+53            android:required="false" />
+53-->[androidx.window:window:1.0.0] C:\Users\hello\.gradle\caches\transforms-3\588e2749adfb91f970d070b479212ab6\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+54
+55        <provider
+55-->[com.squareup.picasso:picasso:2.71828] C:\Users\hello\.gradle\caches\transforms-3\f19f153fb9913346de65f1d49568a435\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+56            android:name="com.squareup.picasso.PicassoProvider"
+56-->[com.squareup.picasso:picasso:2.71828] C:\Users\hello\.gradle\caches\transforms-3\f19f153fb9913346de65f1d49568a435\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+57            android:authorities="com.baymax.demoapp.com.squareup.picasso"
+57-->[com.squareup.picasso:picasso:2.71828] C:\Users\hello\.gradle\caches\transforms-3\f19f153fb9913346de65f1d49568a435\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+58            android:exported="false" />
+58-->[com.squareup.picasso:picasso:2.71828] C:\Users\hello\.gradle\caches\transforms-3\f19f153fb9913346de65f1d49568a435\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+59        <provider
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hello\.gradle\caches\transforms-3\5761e72d5faab6ab69bc1c9d44e82d36\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hello\.gradle\caches\transforms-3\5761e72d5faab6ab69bc1c9d44e82d36\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+61            android:authorities="com.baymax.demoapp.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hello\.gradle\caches\transforms-3\5761e72d5faab6ab69bc1c9d44e82d36\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hello\.gradle\caches\transforms-3\5761e72d5faab6ab69bc1c9d44e82d36\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hello\.gradle\caches\transforms-3\5761e72d5faab6ab69bc1c9d44e82d36\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hello\.gradle\caches\transforms-3\5761e72d5faab6ab69bc1c9d44e82d36\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hello\.gradle\caches\transforms-3\5761e72d5faab6ab69bc1c9d44e82d36\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hello\.gradle\caches\transforms-3\a8ebeb636ebc7f8ebbec967aa4ae6bed\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hello\.gradle\caches\transforms-3\a8ebeb636ebc7f8ebbec967aa4ae6bed\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\hello\.gradle\caches\transforms-3\a8ebeb636ebc7f8ebbec967aa4ae6bed\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+69        </provider>
+70
+71        <service
+71-->[androidx.room:room-runtime:2.4.3] C:\Users\hello\.gradle\caches\transforms-3\56831985b1039b8ca369f18b1f55deb6\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
+72            android:name="androidx.room.MultiInstanceInvalidationService"
+72-->[androidx.room:room-runtime:2.4.3] C:\Users\hello\.gradle\caches\transforms-3\56831985b1039b8ca369f18b1f55deb6\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
+73            android:directBootAware="true"
+73-->[androidx.room:room-runtime:2.4.3] C:\Users\hello\.gradle\caches\transforms-3\56831985b1039b8ca369f18b1f55deb6\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
+74            android:exported="false" />
+74-->[androidx.room:room-runtime:2.4.3] C:\Users\hello\.gradle\caches\transforms-3\56831985b1039b8ca369f18b1f55deb6\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
+75    </application>
+76
+77</manifest>

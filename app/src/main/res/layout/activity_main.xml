@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="holdingsPageStateData"
+            type="com.baymax.demoapp.ui.activity.main_activity.ui.HoldingsPageStateData" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.main_activity.ui.MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/progress_bar"
+                layout="@layout/custom_progress_bar"
+                android:visibility="@{holdingsPageStateData.progressBarVisibility ? View.VISIBLE: View.GONE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/margin10dp"
+                android:visibility="@{holdingsPageStateData.listVisibility ? View.VISIBLE: View.GONE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/holding_item" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size8sp"
+                android:visibility="@{holdingsPageStateData.summaryCardVisibility?View.VISIBLE: View.GONE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_current_value_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size8sp"
+                    android:layout_marginTop="@dimen/size8sp"
+                    android:gravity="start"
+                    android:text="@string/current_value_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/tv_current_value"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_current_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size8sp"
+                    android:layout_marginTop="@dimen/size8sp"
+                    android:gravity="end"
+                    android:text="@{`₹`+holdingsPageStateData.holdingsData.currentValue}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16sp"
+                    android:visibility="@{holdingsPageStateData.holdingsData.currentValue==null?View.GONE:View.VISIBLE}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_current_value_text"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_total_investment_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size8sp"
+                    android:layout_marginVertical="@dimen/size8sp"
+                    android:gravity="start"
+                    android:text="@string/total_investment"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@id/tv_total_investment_value"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_current_value_text" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_total_investment_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size8sp"
+                    android:layout_marginVertical="@dimen/size8sp"
+                    android:gravity="end"
+                    android:text="@{`₹`+holdingsPageStateData.holdingsData.totalInvestment}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16sp"
+                    android:visibility="@{holdingsPageStateData.holdingsData.totalInvestment==null?View.GONE:View.VISIBLE}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_total_investment_text"
+                    app:layout_constraintTop_toBottomOf="@id/tv_current_value" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_todays_pnl_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size8sp"
+                    android:layout_marginTop="@dimen/size8sp"
+                    android:gravity="start"
+                    android:text="@string/today_s_profit_loss"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16sp"
+                    android:textStyle="bold"
+                    android:visibility="@{holdingsPageStateData.holdingsData.todaysPnL==null?View.GONE:View.VISIBLE}"
+                    app:layout_constraintEnd_toStartOf="@id/tv_todays_pnl_value"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_investment_text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_todays_pnl_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size8sp"
+                    android:layout_marginVertical="@dimen/size8sp"
+                    android:gravity="end"
+                    android:text="@{`₹`+holdingsPageStateData.holdingsData.todaysPnL}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16sp"
+                    android:visibility="@{holdingsPageStateData.holdingsData.todaysPnL==null?View.GONE:View.VISIBLE}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_todays_pnl_text"
+                    app:layout_constraintTop_toBottomOf="@id/tv_total_investment_value" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_pnl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size8sp"
+                    android:layout_marginVertical="@dimen/size8sp"
+                    android:gravity="start"
+                    android:text="@string/profit_loss"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16sp"
+                    android:textStyle="bold"
+                    android:visibility="@{holdingsPageStateData.holdingsData.pnl==null?View.GONE:View.VISIBLE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_pnl_value"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_todays_pnl_text" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_pnl_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/size8sp"
+                    android:layout_marginVertical="@dimen/size8sp"
+                    android:gravity="end"
+                    android:text="@{`₹`+holdingsPageStateData.holdingsData.pnl}"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size16sp"
+                    android:visibility="@{holdingsPageStateData.holdingsData.pnl==null?View.GONE:View.VISIBLE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tv_pnl"
+                    app:layout_constraintTop_toBottomOf="@id/tv_todays_pnl_value" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="holdingData"
+            type="com.baymax.demoapp.api.domain_model.HoldingDM" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_symbol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size8sp"
+            android:layout_marginTop="@dimen/size8sp"
+            android:text="@{holdingData.symbol}"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tv_ltp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/size8sp"
+            android:layout_marginStart="@dimen/size8sp"
+            android:text="@{holdingData.quantity}"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_pl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_symbol" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_ltp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size8sp"
+            android:layout_marginTop="@dimen/size8sp"
+            android:gravity="end"
+            android:text="@{`LTP : ₹`+holdingData.ltp}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_symbol"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_pl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/size8sp"
+            android:layout_marginVertical="@dimen/size8sp"
+            android:gravity="end"
+            android:text="@{holdingData.pln}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_quantity"
+            app:layout_constraintTop_toBottomOf="@id/tv_ltp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

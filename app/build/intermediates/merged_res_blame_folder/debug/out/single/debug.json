@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\drawable_oval_shape_green.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\drawable\\oval_shape_green.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\drawable_pr_icon.png.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\drawable\\pr_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\layout_custom_progress_bar.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\layout\\custom_progress_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\raw_loading.json.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\raw\\loading.json"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\drawable_oval_shape_red.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\drawable\\oval_shape_red.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\drawable_bg_verticle_dotted_line.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\drawable\\bg_verticle_dotted_line.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.baymax.demoapp-merged_res-61:/layout_holding_item.xml.flat",
+        "source": "com.baymax.demoapp-main-63:/layout/holding_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\layout_holding_item.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\layout\\holding_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-merged_res-61:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-pngs-56:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    }
+]

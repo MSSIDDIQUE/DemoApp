@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-mergeDebugResources-60:\\layout\\holding_item.xml",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\layout\\holding_item.xml"
+    },
+    {
+        "merged": "com.baymax.demoapp-mergeDebugResources-60:/layout/holding_item.xml",
+        "source": "com.baymax.demoapp-main-63:/layout/holding_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-mergeDebugResources-60:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-mergeDebugResources-60:\\layout\\custom_progress_bar.xml",
+        "source": "C:\\Users\\hello\\.gradle\\daemon\\7.4\\com.baymax.demoapp-main-63:\\layout\\custom_progress_bar.xml"
+    }
+]
